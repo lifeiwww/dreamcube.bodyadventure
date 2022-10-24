@@ -4057,6 +4057,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8912300242611790799, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8912300242611790799, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4083,7 +4091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.88
+      value: -1.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4117,12 +4125,53 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -3602931489584357904, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2845779275431937956, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 361997355419881864, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 361997355419881864, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
       propertyPath: m_Name
       value: elevator
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+--- !u!1 &2107052861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eae4fd755bf8d6b4883b69aec967c8c9, type: 3}
+  m_PrefabInstance: {fileID: 2107052860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2107052862
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107052861}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9f0ae589f03f1f84699394211fcfbf7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &16297519707604864
 GameObject:
   m_ObjectHideFlags: 0
