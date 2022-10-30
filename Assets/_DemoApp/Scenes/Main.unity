@@ -545,11 +545,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseSceneNamesList:
   - ClusterRender
-  - GameRoom
   - Calibration
   ContentScenesNames:
-  - ReactiveGrids
-  - Splat
+  - GameRoom
+  - GameRoom2
 --- !u!4 &1627232687
 Transform:
   m_ObjectHideFlags: 0
