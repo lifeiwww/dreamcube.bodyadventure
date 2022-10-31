@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b5ce094a340bb4bb36762563dfc063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VisualObject: {fileID: 269844453041777049}
+  VisualObject: {fileID: 4458509653738433712}
   StepNumberText: {fileID: 269844452538114771}
   AudioSource: {fileID: 708353209287232786}
 --- !u!54 &7047632535904357242
@@ -333,8 +333,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7644802841865012566, guid: 306ac7b7aa8b55e4bbfa644c4bc2c1cd, type: 3}
   m_PrefabInstance: {fileID: 7613728485670397023}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &269844453041777049 stripped
+--- !u!1 &4458509653738433712 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7644802842221481414, guid: 306ac7b7aa8b55e4bbfa644c4bc2c1cd, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6086240373197408495, guid: 306ac7b7aa8b55e4bbfa644c4bc2c1cd, type: 3}
   m_PrefabInstance: {fileID: 7613728485670397023}
   m_PrefabAsset: {fileID: 0}

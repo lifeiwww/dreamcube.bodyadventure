@@ -3,9 +3,9 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using System.Collections;
 
-
 public class FloorTarget : MonoBehaviour
 {
+    public List<GameObject> EffectiveObject = new List<GameObject>();
     //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     [SerializeField]
     private GameObject VisualObject;
@@ -33,7 +33,10 @@ public class FloorTarget : MonoBehaviour
     {
         PositiveFeedback();
     }
-
+    // public voidd EffectiveObject()
+    // {
+    //     EffectiveObject.GetComponent <RigidBod
+    // }
     public void PositiveFeedback()
     {
         _timesHit++;
@@ -41,6 +44,7 @@ public class FloorTarget : MonoBehaviour
         // change color
         var col = Random.ColorHSV(0, 1, 0.5f, 1, 1, 1);
         VisualObject.GetComponent<MeshRenderer>().material.color = col;
+        
 
         //var px = 0;
        // px = px + 1;
