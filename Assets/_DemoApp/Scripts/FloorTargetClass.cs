@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 using System.Collections;
 
 
-public class FloorTarget : MonoBehaviour
+public class FloorTargetClass : MonoBehaviour
 {
     //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     [SerializeField]
@@ -16,7 +16,7 @@ public class FloorTarget : MonoBehaviour
 
     private int _timesHit;
 
-    public FloorTarget(GameObject visualObject, TextMeshPro stepNumberText)
+    public void FloorTarget(GameObject visualObject, TextMeshPro stepNumberText)
     {
         VisualObject = visualObject;
         StepNumberText = stepNumberText;
