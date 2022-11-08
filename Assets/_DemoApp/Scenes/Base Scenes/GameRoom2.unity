@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 118337768}
   - component: {fileID: 118337769}
   m_Layer: 0
-  m_Name: Stomache&Water
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
