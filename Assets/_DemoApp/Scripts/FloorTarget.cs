@@ -13,7 +13,7 @@ public class FloorTarget : MonoBehaviour
     private TextMeshPro StepNumberText;
     [SerializeField]
     private AudioSource AudioSource;
-
+  
     private int _timesHit;
 
     public FloorTarget(GameObject visualObject, TextMeshPro stepNumberText)

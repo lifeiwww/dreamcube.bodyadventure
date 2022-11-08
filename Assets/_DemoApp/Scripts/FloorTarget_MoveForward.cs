@@ -2,6 +2,8 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 public class FloorTarget_MoveForward : MonoBehaviour
@@ -15,7 +17,7 @@ public class FloorTarget_MoveForward : MonoBehaviour
     private AudioSource AudioSource;
     [SerializeField]
     private GameObject MoveObject;
-
+    public int movementSpeed;
     private int _timesHit;
 
     public void FloorTarget(GameObject visualObject, TextMeshPro stepNumberText)
@@ -29,6 +31,18 @@ public class FloorTarget_MoveForward : MonoBehaviour
         // only be triggered by an object tagged as "Ball"
         if (other.gameObject.CompareTag("Ball"))
             Hit();
+       
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Ball"))
+            notHit();
+    }
+    public void notHit()
+    {
+    
+        MoveObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+
     }
 
     public void Hit()
@@ -45,15 +59,13 @@ public class FloorTarget_MoveForward : MonoBehaviour
         VisualObject.GetComponent<MeshRenderer>().material.color = col;
 
         //var px = 0;
-       // px = px + 1;
+        // px = px + 1;
         //VisualObject.transform.position.x = px;
 
-        var pz = 13.0f;
-        pz = pz - 0.5f;
-        Vector3 temp = new Vector3(0,0,pz);
-        MoveObject.transform.position = temp;
-        //MoveObject.transform.position.z= 7.0f;
 
+        //MoveObject.transform.position.z= 7.0f;
+        MoveObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
+        MoveObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, movementSpeed));
 
         // update text
         StepNumberText.text = _timesHit.ToString("D2");
