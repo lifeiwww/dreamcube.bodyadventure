@@ -3150,7 +3150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &896384596
 Transform:
   m_ObjectHideFlags: 0
@@ -3426,6 +3426,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3124521936383007385, guid: 51f5fa541b2ddc04999727209b66d564, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5050422055867433376, guid: 51f5fa541b2ddc04999727209b66d564, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3482,14 +3486,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969690990}
-  m_LocalRotation: {x: -0.5735764, y: -0, z: -0, w: 0.8191521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.11499941, y: -0.11499986, z: 0.17749906}
   m_LocalScale: {x: 1.8141018, y: 1.8141018, z: 1.8141018}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1127702913}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -70, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &969690992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3522,10 +3526,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1000
-  m_Range: 69.577484
-  m_SpotAngle: 11.296669
-  m_InnerSpotAngle: 5.3726997
+  m_Intensity: 2000
+  m_Range: 60.4
+  m_SpotAngle: 31.584084
+  m_InnerSpotAngle: 13.172425
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -4063,7 +4067,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CapsuleBag: {fileID: 915930033}
-  speed: 1.5
 --- !u!114 &1127702909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4148,7 +4151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127702907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.68, y: 0.47999996, z: -2.708}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4867,7 +4870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CapsuleBag: {fileID: 915930033}
-  speed: 1.5
 --- !u!1 &1179346889
 GameObject:
   m_ObjectHideFlags: 0
@@ -6268,7 +6270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791836, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791839, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_Materials.Array.data[0]
