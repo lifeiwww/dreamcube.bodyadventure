@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_DemoApp/Scenes/Base Scenes/GameRoom2.unity
     guid: f92bc5c4fed2d58459664bcf68848b36
+  - enabled: 1
+    path: Assets/_DemoApp/Scenes/Base Scenes/GameRoom3_test.unity
+    guid: 29bea661cbda32a4bbe727ec377bf485
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 6ecc73b016925134b9c98863934d76e1, type: 2}

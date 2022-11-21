@@ -549,6 +549,7 @@ MonoBehaviour:
   ContentScenesNames:
   - GameRoom
   - GameRoom2
+  - GameRoom3_test
 --- !u!4 &1627232687
 Transform:
   m_ObjectHideFlags: 0
