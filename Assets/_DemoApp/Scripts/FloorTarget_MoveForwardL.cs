@@ -41,7 +41,10 @@ public class FloorTarget_MoveForwardL : MonoBehaviour
     public void notHit()
     {
 
+
         MoveObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+        var col0 = Color.white;
+        VisualObject.GetComponent<MeshRenderer>().material.color = col0;
 
     }
 
@@ -55,7 +58,7 @@ public class FloorTarget_MoveForwardL : MonoBehaviour
         _timesHit++;
 
         // change color
-        var col = Random.ColorHSV(0, 1, 0.5f, 1, 1, 1);
+        var col = Color.gray;
         VisualObject.GetComponent<MeshRenderer>().material.color = col;
 
         //var px = 0;
@@ -68,12 +71,12 @@ public class FloorTarget_MoveForwardL : MonoBehaviour
         MoveObject.GetComponent<Rigidbody>().AddForce(new Vector3(-movementSpeed, 0, movementSpeed));
 
         // update text
-        StepNumberText.text = _timesHit.ToString("D2");
+        //StepNumberText.text = _timesHit.ToString("D2");
 
-        StepNumberText.fontSize = (Random.Range(20f, 30f));
+        //StepNumberText.fontSize = (Random.Range(20f, 30f));
 
         // make a sound
-        AudioSource.pitch = (Random.Range(0.6f, 1.2f));
-        AudioSource.Play();
+        //AudioSource.pitch = (Random.Range(0.6f, 1.2f));
+        //AudioSource.Play();
     }
 }

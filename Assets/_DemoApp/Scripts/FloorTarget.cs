@@ -52,8 +52,10 @@ public class FloorTarget : MonoBehaviour
 
         StepNumberText.fontSize = (Random.Range(20f, 30f));
 
+        
+
         // make a sound
-        AudioSource.pitch = (Random.Range(0.6f, 1.2f));
-        AudioSource.Play();
+       // AudioSource.pitch = (Random.Range(0.6f, 1.2f));
+        //AudioSource.Play();
     }
 }
