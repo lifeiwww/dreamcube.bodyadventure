@@ -545,7 +545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseSceneNamesList:
   - ClusterRender
-  - Calibration
+  - StatsAndCalibration
   ContentScenesNames:
   - GameRoom
   - S1
