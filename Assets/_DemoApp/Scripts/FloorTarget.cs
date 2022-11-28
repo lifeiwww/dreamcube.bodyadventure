@@ -16,6 +16,9 @@ public class FloorTarget : MonoBehaviour
   
     private int _timesHit;
 
+    public float speed = 5f;
+    Vector3 temp;
+
     public FloorTarget(GameObject visualObject, TextMeshPro stepNumberText)
     {
         VisualObject = visualObject;
@@ -37,7 +40,8 @@ public class FloorTarget : MonoBehaviour
     public void PositiveFeedback()
     {
         _timesHit++;
-        
+
+        ScoreScript.scoreValue += 1;
         // change color
         var col = Random.ColorHSV(0, 1, 0.5f, 1, 1, 1);
         VisualObject.GetComponent<MeshRenderer>().material.color = col;
@@ -52,10 +56,23 @@ public class FloorTarget : MonoBehaviour
 
         StepNumberText.fontSize = (Random.Range(20f, 30f));
 
-        
+
 
         // make a sound
-       // AudioSource.pitch = (Random.Range(0.6f, 1.2f));
+        // AudioSource.pitch = (Random.Range(0.6f, 1.2f));
         //AudioSource.Play();
-    }
+
+        //scale down
+        temp = transform.localScale;
+
+        temp.x -= 0.1f;
+        temp.y -= 0.1f;
+        temp.z -= 0.1f;
+
+        transform.localScale = temp;
+
+  
+            
+        }
+    
 }
