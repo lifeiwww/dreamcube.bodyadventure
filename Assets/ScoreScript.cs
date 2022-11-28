@@ -7,7 +7,7 @@ using TMPro;
 public class ScoreScript : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshPro score;
+    private TextMeshProUGUI score;
 
     public static int scoreValue = 0;
     //Text score;
