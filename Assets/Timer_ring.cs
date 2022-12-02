@@ -40,6 +40,7 @@ public class Timer_ring : MonoBehaviour
     }
     private void OnEnd() {
 
+        uiText.text = "Time's Up";
         //End time, if want to do something : )
         print("End");
     }
