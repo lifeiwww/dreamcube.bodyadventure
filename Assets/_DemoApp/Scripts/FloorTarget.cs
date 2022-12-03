@@ -41,7 +41,10 @@ public class FloorTarget : MonoBehaviour
     {
         _timesHit++;
 
-        ScoreScript.scoreValue += 1;
+        //if temp<0.2f
+       // ScoreScript.scoreValue += 1;
+
+
         // change color
         var col = Random.ColorHSV(0, 1, 0.5f, 1, 1, 1);
         VisualObject.GetComponent<MeshRenderer>().material.color = col;
@@ -52,9 +55,9 @@ public class FloorTarget : MonoBehaviour
 
 
         // update text
-        StepNumberText.text = _timesHit.ToString("D2");
+       // StepNumberText.text = _timesHit.ToString("D2");
 
-        StepNumberText.fontSize = (Random.Range(20f, 30f));
+       // StepNumberText.fontSize = (Random.Range(20f, 30f));
 
 
 
@@ -71,8 +74,14 @@ public class FloorTarget : MonoBehaviour
 
         transform.localScale = temp;
 
-  
-            
+
+        if (temp.z<0.5f) {
+            ScoreScript.scoreValue += 1;
+            transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
         }
+
+
+
+    }
     
 }

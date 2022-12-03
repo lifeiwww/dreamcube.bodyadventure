@@ -40,9 +40,9 @@ public class FloorTarget_MoveForward : MonoBehaviour
     }
     public void notHit()
     {
-    
+
         MoveObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-        var col0 = Color.white;
+        var col0 = new Color(0.6f, 0.8f, 0.3f, 1);
         VisualObject.GetComponent<MeshRenderer>().material.color = col0;
 
     }
@@ -57,8 +57,9 @@ public class FloorTarget_MoveForward : MonoBehaviour
         _timesHit++;
 
         // change color
-        var col = Color.gray;
+        var col = new Color(0.8f, 0.7f, 0.6f, 1);
         VisualObject.GetComponent<MeshRenderer>().material.color = col;
+
 
         //var px = 0;
         // px = px + 1;

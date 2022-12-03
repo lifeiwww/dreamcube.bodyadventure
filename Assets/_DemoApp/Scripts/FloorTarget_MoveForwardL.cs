@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class FloorTarget_MoveForwardL : MonoBehaviour
 {
     //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
     [SerializeField]
     private GameObject VisualObject;
     [SerializeField]
@@ -42,8 +43,10 @@ public class FloorTarget_MoveForwardL : MonoBehaviour
     {
 
         MoveObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-        var col0 = Color.white;
+       
+        var col0 = new Color(0.6f, 0.8f, 0.3f, 1);
         VisualObject.GetComponent<MeshRenderer>().material.color = col0;
+
     }
 
     public void Hit()
@@ -56,7 +59,7 @@ public class FloorTarget_MoveForwardL : MonoBehaviour
         _timesHit++;
 
         // change color
-        var col = Color.gray;
+        var col = new Color(0.8f,0.7f,0.6f,1);
         VisualObject.GetComponent<MeshRenderer>().material.color = col;
 
         //var px = 0;
