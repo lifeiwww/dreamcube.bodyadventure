@@ -551,6 +551,7 @@ MonoBehaviour:
   - S1
   - GameRoom2
   - GameRoom3_test
+  - Toilet_Scene
 --- !u!4 &1627232687
 Transform:
   m_ObjectHideFlags: 0

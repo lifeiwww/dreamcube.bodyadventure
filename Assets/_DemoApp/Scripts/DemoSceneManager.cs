@@ -37,11 +37,11 @@ public class DemoSceneManager : BaseSceneManager
             Debug.Log("TD Scene Manager 4 Pressed");
             LoadSceneWithIndex(3);
         }
-        //else if (Input.GetKeyUp(KeyCode.Alpha3))
-        //{
-        //  Debug.Log("TD Scene Manager 3 Pressed");
-        //  LoadSceneWithIndex(2);
-        //}
+        else if (Input.GetKeyUp(KeyCode.Alpha5))
+        {
+          Debug.Log("TD Scene Manager 5 Pressed");
+          LoadSceneWithIndex(4);
+        }
         //else if (Input.GetKeyUp(KeyCode.Alpha4))
         //{
         //Debug.Log("TD Scene Manager 2 Pressed");
