@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28166
+  m_Name: pb_Mesh190702
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -394,6 +394,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIRoot
       objectReference: {fileID: 0}
+    - target: {fileID: 5851980940694580769, guid: 78e8397ab396c364485c7339dfd92450, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851980942389186795, guid: 78e8397ab396c364485c7339dfd92450, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4964211379539029759, guid: 78e8397ab396c364485c7339dfd92450, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 78e8397ab396c364485c7339dfd92450, type: 3}
@@ -423,7 +431,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8994
+  m_Name: pb_Mesh-1394784
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
